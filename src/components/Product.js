@@ -56,7 +56,7 @@ const Product = (props) => {
                     </div>
                     <div className="p-2 flex justify-between items-center mt-4">
                         <span className="font-bold">₹{product.price}</span>
-                        <button disabled={isAdding} onClick={(e)=>{addToCart(e,product)}} className={`${ isAdding ?'bg-green-500':'bg-yellow-500'}  py-1 px-3 rounded-full font-bold`}>ADD{ isAdding?'ED':'' }</button>
+                        <button disabled={isAdding} onClick={(e)=>{addToCart(e,product)}} className={`${ isAdding ?'bg-green-500':'bg-yellow-500 hover:bg-yellow-400'}  transition duration-300 py-1 px-3 rounded-full font-bold`}>ADD{ isAdding?'ED':'' }</button>
                     </div>
             </div>
              </Link>

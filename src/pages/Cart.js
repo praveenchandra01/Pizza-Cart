@@ -88,12 +88,12 @@ function Cart() {
                                     </div>
                                 </Link>
                                 <div>
-                                   <button onClick={() => { decreament(product._id) }} className="bg-yellow-500 px-3 py-1 rounded-full leading-none"><i className="text-xs fas fa-minus"></i></button>
+                                   <button onClick={() => { decreament(product._id) }} className="bg-yellow-500 hover:bg-yellow-400 transition duration-300 px-3 py-1 rounded-full leading-none"><i className="text-xs fas fa-minus"></i></button>
                                    <b className="px-4">{ getQty(product._id) }</b>
-                                   <button onClick={() => { increament(product._id) }} className="bg-yellow-500 px-3 py-1 rounded-full leading-none"><i className="text-xs fas fa-plus"></i></button>
+                                   <button onClick={() => { increament(product._id) }} className="bg-yellow-500 hover:bg-yellow-400 transition duration-300 px-3 py-1 rounded-full leading-none"><i className="text-xs fas fa-plus"></i></button>
                                 </div>
                                 <span>₹ { getSum(product._id, product.price) }</span>
-                                <button onClick={() => { handleDelete(product._id) }} className="bg-red-500 px-4 py-2 rounded-full leading-none text-white">Delete</button>
+                                <button onClick={() => { handleDelete(product._id) }} className="bg-red-500 hover:bg-red-600 transition duration-500 px-4 py-2 rounded-full leading-none text-white">Delete</button>
                             </div>
                         </li>
                         )

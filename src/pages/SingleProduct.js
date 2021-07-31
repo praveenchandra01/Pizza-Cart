@@ -58,7 +58,7 @@ const SingleProduct = () => {
                     </h1>
                     <div className="text-md">{product.size}</div>
                     <div className="font-bold mt-2">₹ {product.price}</div>
-                    <button disabled={isAdding} onClick={(e)=>{addToCart(e,product)}} className={`${ isAdding ?'bg-green-500':'bg-yellow-500'}  py-1 px-3 rounded-full font-bold`} >{`${isAdding?'ADDED':'Add to cart'}`}</button>
+                    <button disabled={isAdding} onClick={(e)=>{addToCart(e,product)}} className={`${ isAdding ?'bg-green-500':'bg-yellow-500 hover:bg-yellow-400'} transition duration-300 py-1 px-3 rounded-full font-bold`} >{`${isAdding?'ADDED':'Add to cart'}`}</button>
                 </div>
             </div>
            
