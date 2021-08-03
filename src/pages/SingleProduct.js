@@ -37,7 +37,7 @@ const SingleProduct = () => {
     
     
     useEffect(() => {
-        fetch(`https://star-spark-pasta.glitch.me/api/products/${param._id}`)
+        fetch(`https://ecom-rest-apis.herokuapp.com/api/products/${param._id}`)
         .then(res=>res.json())
         .then(product=>{
             console.log(product);
