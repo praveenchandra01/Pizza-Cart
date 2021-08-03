@@ -17,7 +17,7 @@ function Cart() {
        if(priceFetched){
            return
        }
-       fetch('https://star-spark-pasta.glitch.me/api/products/cart-items',{  //
+       fetch('https://ecom-rest-apis.herokuapp.com/api/products/cart-items',{  //
            method: 'POST',
            headers: {
                'content-type': 'application/json'

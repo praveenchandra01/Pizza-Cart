@@ -7,7 +7,7 @@ const Products = () => {
     const [products,setProducts] = useState([]);
     const [isLoading, setIsloading] = useState(true)
     useEffect(()=>{
-        fetch('https://star-spark-pasta.glitch.me/api/products/') //
+        fetch('https://ecom-rest-apis.herokuapp.com/api/products/') //
         .then(response=>response.json())
         .then(products=>{
             setProducts(products);
