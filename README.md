@@ -11,7 +11,7 @@
 - context API 
 - React Router
 - Props
-#### Backend API : https://star-spark-pasta.glitch.me/api/products
+#### Backend API : https://ecom-rest-apis.herokuapp.com/api/products
 #### Access link : https://praveenchandra01.github.io/Pizza-Cart/#/
 ---
 ## Preview
