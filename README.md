@@ -1,9 +1,9 @@
 # Pizza-Cart
-### Pizza ordering cart developed using react and tailwind css, it fetches Products from backend API and shows on webpage
+### Pizza ordering cart developed using react and tailwind css, it fetches Products from backend API and shows on webpage.
 ## Features
 - Minimal UI
 - Add product or remove product
-- Increament or decreament products in cart
+- Increment or decrement products in cart
 - Products saved on local storage
 ## React concepts used in this app
 - useState hook
