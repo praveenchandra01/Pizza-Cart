@@ -4,7 +4,7 @@
 - Minimal UI
 - Add product or remove product
 - Increment or decrement products in cart
-- Products saved on local storage
+- Products in cart saved on local storage
 ## React concepts used in this app
 - useState hook
 - useEffect hook
