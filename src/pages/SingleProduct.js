@@ -42,6 +42,14 @@ const SingleProduct = () => {
         .then(product=>{
             console.log(product);
             setProduct(product);
+        }).catch(err=>{
+            console.log(err);
+            fetch(`https://star-spark-pasta.glitch.me/api/products/${param._id}`) //Backup API
+                .then(res=>res.json())
+                .then(product=>{
+                 console.log(product);
+                 setProduct(product);
+        })
         })
     },[param._id])
 

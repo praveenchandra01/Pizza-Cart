@@ -28,6 +28,21 @@ function Cart() {
             setProducts(products);
             togglePriceFetched(true);
        }))
+       .catch(err=>{
+           console.log(err);
+           fetch('https://star-spark-pasta.glitch.me/api/products/cart-items',{  // Backup API
+           method: 'POST',
+           headers: {
+               'content-type': 'application/json'
+           },
+           body: JSON.stringify({ ids : Object.keys(cart.items)})
+       }).then(res=>res.json()
+         .then(products=>{
+             setProducts(products);
+             togglePriceFetched(true);
+       }))
+       })
+
     }, [cart,priceFetched])
 
     const getQty = (productId) => {

@@ -13,6 +13,15 @@ const Products = () => {
             setProducts(products);
             setIsloading(false)
         })
+        .catch(err=>{
+            console.log(err)
+            fetch('https://star-spark-pasta.glitch.me/api/products') // Backup API
+            .then(response=>response.json())
+            .then(products=>{
+                setProducts(products);
+             setIsloading(false)
+             })
+        })
     },[])
     return (
         <div className="container mx-auto pb-24">
