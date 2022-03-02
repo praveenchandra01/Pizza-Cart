@@ -16,4 +16,6 @@
 #### Access link : https://praveenchandra01.github.io/Pizza-Cart/#/
 ---
 ## Preview
-![](https://github.com/praveenchandra01/Pizza-Cart/blob/master/src/images/Pizza-Cart.png)
+![](https://github.com/praveenchandra01/Pizza-Cart/blob/master/src/images/preview_1.png)
+-
+![](https://github.com/praveenchandra01/Pizza-Cart/blob/master/src/images/preview_2.png)
